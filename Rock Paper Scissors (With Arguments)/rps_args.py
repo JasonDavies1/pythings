@@ -22,3 +22,16 @@ for key, value in combonations.items() :
     for item in value :
         print(item + " ")
     print()
+
+player_one_name = input("What is Player 1's name?: ")
+player_two_name = input("What is Player 2's name?: ") 
+
+player_one_choice = input("Make your choice " + player_one_name + ": ") 
+while player_one_choice not in inputs :
+    print("Get it together " + player_one_name + " and choose something in the list!")
+    player_one_choice = input("Make your choice " + player_one_name + ": ") 
+
+player_two_choice = input("Make your choice " + player_two_name + ": ") 
+while player_two_choice not in inputs : 
+    print("Get it together " + player_two_name + " and choose something in the list!")
+    player_two_choice = input("Make your choice " + player_two_name + ": ") 
