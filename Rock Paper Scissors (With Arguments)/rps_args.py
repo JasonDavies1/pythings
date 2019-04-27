@@ -16,7 +16,6 @@ def check_arguments_correct(n) :
 
 def generateCombonations(inputs, wins_losses) :
     combonations = defaultdict(list)
-
     for index, item in enumerate(inputs) : 
         for j in range(1, wins_and_losses) : 
             combonations[inputs[index]].append(inputs[(index + j) % number_of_inputs])
@@ -24,10 +23,7 @@ def generateCombonations(inputs, wins_losses) :
 
 def display_wins_losses_dictionary(dic) :
     for key, value in combonations.items() :
-        print(key + " beats:")
-        for item in value :
-            print(item + " ")
-        print()
+        print(key + " beats: " + ", ".join(value) + "\n")
 
 def get_player_name(player_number) :
     return input("What is Player " + str(player_number) + "'s name?: ")
