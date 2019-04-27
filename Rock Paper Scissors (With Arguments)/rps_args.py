@@ -17,4 +17,8 @@ for index, item in enumerate(inputs) :
     for j in range(1, wins_and_losses) : 
         combonations[inputs[index]].append(inputs[(index + j) % number_of_inputs])
 
-print(combonations.items())
+for key, value in combonations.items() :
+    print(key + " beats:")
+    for item in value :
+        print(item + " ")
+    print()
