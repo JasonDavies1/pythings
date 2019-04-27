@@ -37,4 +37,16 @@ while player_one_choice not in inputs :
 player_two_choice = getpass("Make your choice " + player_two_name + ": ") 
 while player_two_choice not in inputs : 
     print("Get it together " + player_two_name + " and choose something in the list!")
-    player_two_choice = getpass("Make your choice " + player_two_name + ": ") 
+    player_two_choice = getpass("Make your choice " + player_two_name + ": ")
+
+player_one_results = combonations[player_one_choice]
+player_two_results = combonations[player_two_choice]
+
+if player_one_choice == player_two_choice :
+    print("Tie game!")
+    sys.exit()
+elif player_two_choice in player_one_results :
+    print(player_one_name + " wins!")
+    sys.exit()
+else :
+    print(player_two_name + " wins!")
