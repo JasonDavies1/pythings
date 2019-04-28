@@ -11,7 +11,7 @@ For bash in windows use:
 
 For a standard windows command prompt: 
 
-    pythong play.py arg1 arg1 arg2 arg3 ... argN
+    python play.py arg1 arg1 arg2 arg3 ... argN
 
 # Features
 + The game will auto-reject if you attempt to run the script with no parameters.
