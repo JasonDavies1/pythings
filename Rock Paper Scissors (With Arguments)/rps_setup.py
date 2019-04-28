@@ -31,14 +31,14 @@ def get_player_choice(name, inputs):
         player_choice = getpass("Make your choice " + name + ": ") 
     return player_choice
 
-def assert_winner(p1_name, p2_name, p1_choice, p2_choice, p1_results) :
+def get_result(p1_name, p2_name, p1_choice, p2_choice, p1_results) :
+    result = ''
     if p1_choice == p2_choice :
-        print("Tie game!")
-        sys.exit()
+        result = "Tie game!"
     elif p2_choice in p1_results :
-        print(p1_name + " wins!")
-        sys.exit()
+        result = "{} wins!".format(p1_name)
     else :
-        print(p2_name + " wins!")
+        result = "{} wins!".format(p2_name)
+    return result
 
 
