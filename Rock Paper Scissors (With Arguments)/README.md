@@ -6,8 +6,11 @@ This is the main fruit that I wanted to achieve. Rock Paper Scissors is cool, ho
 Note: As I annoyingly found out, this will not work correctly in a bash shell in Windows, because the getpass module is used in order to hide user inputs - obviously, or else we could just choose a winning result from the displayed dictionary (Pro-cheating tactic: keep an ear out for keystrokes...) 
 
 For bash in windows use: 
+
     `winpty python play.py arg1 arg2 arg3 ... argN`
+
 For a standard windows command prompt: 
+
     `pythong play.py arg1 arg1 arg2 arg3 ... argN`
 
 # Features
