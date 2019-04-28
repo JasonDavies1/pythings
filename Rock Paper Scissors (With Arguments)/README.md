@@ -7,11 +7,11 @@ Note: As I annoyingly found out, this will not work correctly in a bash shell in
 
 For bash in windows use: 
 
-    `winpty python play.py arg1 arg2 arg3 ... argN`
+    winpty python play.py arg1 arg2 arg3 ... argN
 
 For a standard windows command prompt: 
 
-    `pythong play.py arg1 arg1 arg2 arg3 ... argN`
+    pythong play.py arg1 arg1 arg2 arg3 ... argN
 
 # Features
 + The game will auto-reject if you attempt to run the script with no parameters.
