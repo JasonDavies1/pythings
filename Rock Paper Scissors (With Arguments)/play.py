@@ -13,7 +13,7 @@ def play_again() :
     return selection
 
 #setup
-setup.check_arguments_correct(number_of_inputs)
+setup.check_arguments_correct(inputs)
 wins_and_losses = int((number_of_inputs + 1) / 2)
 combinations = setup.generate_combinations(inputs, wins_and_losses, number_of_inputs)
 setup.display_wins_losses_dictionary(combinations)

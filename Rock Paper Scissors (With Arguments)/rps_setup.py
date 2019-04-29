@@ -2,13 +2,26 @@ import sys
 from collections import defaultdict
 from getpass import getpass
 
-def check_arguments_correct(n) :
-    if n == 1 : 
+def check_for_duplicates(inputs, number_of_inputs) :
+    if number_of_inputs != len(set(inputs)):
+        print("Duplicates exist in your arguments!")
+        sys.exit()
+
+def check_for_only_one_argument(number_of_arguments) :
+    if number_of_inputs == 1 : 
         print("Please use more than one argument")
         sys.exit()
-    elif n % 2 == 0 :
+
+def check_for_an_even(number_of_inputs) :        
+    if number_of_inputs % 2 == 0 :
         print("Invalid number of inputs, retry with an odd number")
         sys.exit()
+
+def check_arguments_correct(inputs) :
+    number_of_inputs = len(inputs)
+    check_for_duplicates(inputs, number_of_inputs) 
+    check_for_only_one_argument(number_of_arguments)
+    check_for_an_even(number_of_inputs)
 
 def generate_combinations(inputs, wins_losses, number_of_inputs) :
     combinations = defaultdict(list)
